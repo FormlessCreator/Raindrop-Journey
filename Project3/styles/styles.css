@@ -1,0 +1,9 @@
+#sketches
+{
+    width: 350px; 
+    height: auto; 
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    border: solid;
+}

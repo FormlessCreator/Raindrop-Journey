@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>Introduction</h2>
+        <p>
+          Welcome to the development log of the *[ Raindrop Game ]*. This is a 2D platformer game where a raindrop jumps on leaves to climb higher. In this journal, I'll document my journey of building the game and the challenges I encountered.
+        </p>
+      
+        <h2>Setting Up the Project</h2>
+        <p>
+          I started by initializing the game with PIXI.js. The first step was creating a simple canvas where I could display graphics. I added a raindrop and some leaves to serve as platforms. The raindrop was a blue circle, and the leaves were textured sprites.
+        </p>
+        <p>
+          One challenge I faced was positioning the raindrop properly on the screen. After tweaking the initialization code, I managed to set the raindrop at the middle of the screen as its starting position.
+        </p>
+      
+        <h2>Adding Gravity and Jumping</h2>
+        <p>
+          I implemented gravity and made the raindrop fall naturally. Adding a "jump" mechanic was tricky but fun. When the raindrop lands on a leaf, it jumps upward. Initially, the jump felt abrupt, so I adjusted the collusion and position for smoother movement.
+        </p>
+        <p>
+          Here’s a key realization: balancing game physics is crucial to creating a fun experience. Too much gravity or a weak jump made the game feel either frustrating or boring.
+        </p>
+      
+        <h2>Collisions and Platforms</h2>
+        <p>
+          I worked on collision detection between the raindrop and leaves. Initially, the raindrop got stuck on the leaf or fell through. To fix this, I adjusted the collision box logic and ensured the raindrop landed above the leaf, not behind it.
+        </p>
+        <p>
+          I also added random movement for the leaves to make the game more challenging. The leaves now fall down the screen, and when they reach the bottom, they reset to the top with a new random position. I created methods to keep the raindrop and leaves within the screen view.
+        </p>
+      
+        <h2>Adding a Background and UI</h2>
+        <p>
+          I added a side tree hand drawn background that goes well with the plain blue background with a sky-themed image. This gave the game a polished look. I also added UI elements, including a score counter and level display. Initially, the score showed decimals, but I updated the code to display only whole numbers for clarity.
+        </p>
+      
+        <h2>Finishing Touches</h2>
+        <p>
+          I added a game-over screen to indicate when the number of jumps left is 0. Additionally, I change the winning condition from reaching the sky to staying on the leaves as long as you can.
+        </p>
+        <p>
+          Finally, I added random tints to the leaves to give the game a colorful and dynamic feel. The raindrop's movement now feels smooth and responsive, thanks to fine-tuned physics.
+        </p>
+
+        <h2>Resources used</h2>
+        <p>
+          I used some previous class "Circle blast" text label codes to speed up the time for finishing up the game. I edit some of the code to fit the game's visual look.
+        </p>
+
+        <h2>Over-Scopes</h2>
+        <ul>
+            <p>Due to less time:</p>
+            <li>I halted the implemetation of the power ups.</li>
+            <li>I abandoned the idea of a wrap power up that changes shape randomly with time.</li>
+            <li>I abandoned the idea of a power up that teleports raindrop to the highest leaf on the screen.</li>
+            <Li>I let go of many initial overscoped ideas too...</Li>
+        </ul>
+      
+        <h2>Conclusion</h2>
+        <p>
+          Building the Raindrop Game has been an exciting learning experience. I also learned that time for ideas and implemetation must be calculated in scope for better work load management. From handling collisions to tweaking physics, I’ve gained a deeper understanding of game mechanics. I hope players enjoy the journey of holding on to leaves as much as you can! That sounds funny.
+        </p>
+
+        <h2>Back to proposal page:</h2>
+        <a href="proposal.html">Tap to go back to proposal page.</a>
+      </main>
+
+      <footer>
+        <p>© 2024 Mayowa Famade | IGME.235.06 - Intro to Game Web Tech</p>
+      </footer>
+</body>
+</html>
